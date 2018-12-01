@@ -788,8 +788,24 @@ a.pswp__share--download:hover{background:#ddd}
 .banner .en1{margin-bottom:2px;font-size:54px}
 .banner .ch{font-size:60px}
 .banner .en2{margin-top:2px;font-size:16px;line-height:1.6}
-.banner .slick-dots{bottom:60px}
+.banner .slick-dots{bottom:20px}
 .banner .slick-dots li{margin:0 10px;background:#fff}
+.banner-box{position:relative}
+#mouse{position:absolute;z-index:199;bottom:50px;left:50%;margin-left:-50px;width:100px;text-align:center;font-size:12px;color:#fff;cursor:pointer}
+#mouse i{display:block;position:relative;border:2px solid #fff;width:14px;height:22px;border-radius:7px;margin:5px auto 0 auto}
+#mouse i:before{content:"";position:absolute;left:5px;top:4px;width:4px;height:4px;border-radius:100%;background:#fff;-webkit-animation:mouse 2s infinite;-moz-animation:mouse 2s infinite;animation:mouse 2s infinite}
+@-webkit-keyframes mouse{
+0%{top:4px;opacity:1}
+100%{top:14px;opacity:0}
+}
+@-moz-keyframes mouse{
+0%{top:4px;opacity:1}
+100%{top:14px;opacity:0}
+}
+@keyframes mouse{
+0%{top:4px;opacity:1}
+100%{top:14px;opacity:0}
+}
 .footer{background:#282f38;color:#748396;line-height:24px}
 .footer a{color:#748396}
 .footer .b{padding:22px 0}
@@ -832,7 +848,7 @@ a.pswp__share--download:hover{background:#ddd}
 .ix-res .nowti{position:absolute;left:0;right:0;bottom:15px;padding:0 25px;font-size:18px}
 .ix2{position:relative}
 .ix2 .ix-ti{position:absolute;left:0;right:0;top:55px;z-index:9}
-.ix2 .ii-controls-box{position:absolute;left:0;right:0;bottom:70px}
+.ix2 .ii-controls-box{position:absolute;left:0;right:0;bottom:70px;z-index:105}
 .ix-ind-list{color:#fff}
 .ix-ind-list a{color:#fff}
 .ix-ind-list .pic2:after{content:"";position:absolute;top:0;bottom:0;left:0;right:0;background:url(../images/black5.png);background:rgba(0,0,0,.2)}
@@ -874,7 +890,7 @@ a.pswp__share--download:hover{background:#ddd}
 .ix-pro li:nth-child(2n) .pai{background:#3c4c73}
 .ix-pro a{display:block;position:relative;padding-bottom:115px;text-align:left;color:#fff}
 .ix-pro .pai{padding-bottom:130.3%;background:#2e5a78;-webkit-transition:.4s;-moz-transition:.4s;transition:.4s}
-.ix-pro .pai img{opacity:.2}
+.ix-pro .pai img{opacity:.2;filter:Alpha(opacity=20)}
 .ix-pro .txts{position:absolute;top:45px;left:25px;right:55px}
 .ix-pro .ch{font-size:24px}
 .ix-pro .en{margin-top:6px;font-size:18px;text-transform:capitalize}
@@ -943,7 +959,6 @@ a.pswp__share--download:hover{background:#ddd}
 .header .h-share{padding-top:30px}
 }
 @media screen and (max-width:1366px){
-.banner .slick-dots{bottom:40px}
 .banner .en1{font-size:44px}
 .banner .ch{font-size:50px}
 .banner .en2{font-size:14px}
