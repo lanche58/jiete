@@ -506,6 +506,8 @@ to{width:0}
 100%{-webkit-transform:translateY(10%);-moz-transform:translateY(10%);transform:translateY(10%);opacity:0}
 }
 @media screen and (min-width:1025px){
+.skewpic img{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);-webkit-transition:.4s;-moz-transition:.4s;transition:.4s}
+.skewpic:hover img{-webkit-transform:scale(1.1) translateY(-15px);-moz-transform:scale(1.1) translateY(-15px);-ms-transform:scale(1.1) translateY(-15px);transform:scale(1.1) translateY(-15px)}
 .scapic:hover img{-moz-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);-webkit-transform:scale(1.1)}
 .transY{-webkit-transform:translateY(60px);-moz-transform:translateY(60px);-ms-transform:translateY(60px);transform:translateY(60px);opacity:0;visibility:hidden}
 .transYF{-webkit-transform:translateY(-60px);-moz-transform:translateY(-60px);-ms-transform:translateY(-60px);transform:translateY(-60px);opacity:0;visibility:hidden}
@@ -769,10 +771,13 @@ a.pswp__share--download:hover{background:#ddd}
 .header .h-share{margin-left:30px;padding-top:40px}
 .header .r{margin-right:3.02%}
 .tnav{position:absolute;left:50%;top:100%;margin-left:-70px;padding:20px 0;background:#fff;width:140px;box-shadow:0 5px 10px rgba(0,0,0,.2);-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);opacity:0;visibility:hidden;-webkit-transition:.4s;-moz-transition:.4s;transition:.4s}
-.tnav a{display:block;padding:3px 5px;color:#333;font-size:16px;text-align:center}
-.tnav:before{content:"";position:absolute;top:0;left:50%;margin-left:-20px;width:40px;height:4px;background:#d9251d}
+.tnav a{display:block;position:relative;padding:6px 5px;line-height:1.4;color:#333;text-align:center}
+.tnav a:before{content:"";position:absolute;width:0;left:50%;top:0;bottom:0;background:#d9251d;-webkit-transition:.4s;-moz-transition:.4s;transition:.4s}
+.tnav:before{content:"";position:absolute;top:0;left:50%;margin-left:-15px;width:30px;height:4px;background:#d9251d}
+.tnav p{position:relative}
 @media screen and (min-width:1025px){
-.tnav a:hover{color:#d9251d}
+.tnav a:hover{color:#fff}
+.tnav a:hover:before{width:100%;left:0}
 }
 .mtop{height:104px}
 .h-share p{float:left;margin-right:8px}
@@ -1012,8 +1017,6 @@ a.pswp__share--download:hover{background:#ddd}
 .f-nav li+li{margin-left:50px}
 .f-nav a:first-child{font-size:15px}
 .footer .t{padding-top:55px}
-.tnav{width:120px;padding:15px 0;margin-left:-60px}
-.tnav a{padding:0 5px;font-size:14px}
 .ix-pro .slick-arrow{top:32%;width:52px;height:52px;line-height:52px;font-size:20px}
 .ix-pro .slick-prev{left:-85px}
 .ix-pro .slick-next{right:-85px}
@@ -1797,8 +1800,9 @@ a.pswp__share--download:hover{background:#ddd}
 .ser1{padding:80px 0 85px 0}
 .ser1 .ab-ti{margin-bottom:40px}
 .ser1 .freeTx{width:900px;max-width:100%;margin:0 auto}
-.ser2{padding:80px 0 85px 0}
+.ser2{padding:80px 0 85px 0;color:#fff}
 .ser2 .freeTx{margin-top:45px;text-align:center}
+.ser2 .freeTx.w{width:730px;max-width:100%;margin-left:auto;margin-right:auto}
 .down-list{line-height:24px;color:#fff;width:900px;max-width:100%;margin:0 auto}
 .down-list a{color:#fff}
 .down-list li{position:relative;background:#666;padding:15px 40px;-webkit-transition:.3s;-moz-transition:.3s;transition:.3s}
@@ -1831,6 +1835,7 @@ a.pswp__share--download:hover{background:#ddd}
 .down-list .btn{font-size:12px}
 .down-list .icon{margin-right:5px;font-size:18px}
 .down-list .btn+.btn{margin-left:10px;padding-left:10px}
+.ser2 .freeTx.w{text-align:left}
 }
 .cta-list{margin-left:-20px}
 .cta-list li{width:25%;float:left}
